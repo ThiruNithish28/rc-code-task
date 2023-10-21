@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <form action="" class="form_container">
+                <div class="name form-group">
+                    <label for="userName">name</label>
+                    <input type="text" name="user-name" id="userName" pattern="[a-zA-Z0-9._+-]{8,}" placeholder="enter user name" required>
+                </div>
+                <div class="e-mail form-group">
+                    <label for="mail">e-mail</label>
+                    <input type="email" name="e-mail" id="mail" pattern="[a-zA-Z0-9._+-]+@[a-zA-Z0-9 -]+\.[a-z]{2,}" placeholder="name@example.com" required>
+                </div>
+                <div class="password form-group">
+                    <label for="pass-word">password</label>
+                    <input type="password" name="password" id="pass-word"  pattern="[a-zA-Z0-9@_]{8,}" placeholder="atleast 8 character" required>
+                </div>
+                <button class="btn">submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
